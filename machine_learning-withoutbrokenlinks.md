@@ -153,7 +153,8 @@ Source of Data
     plot(tree$table, col = tree$byClass, main = paste("Analysis by Decision Tree: Accuracy =", round(tree$overall['Accuracy'], 4)))
 
 ![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-9-1.png)
-\#\#\#Prediction of Data using Random Forest
+
+####Prediction of Data using Random Forest
 
     set.seed(12345)
     modFitB1 <- randomForest(classe ~ ., data=myTraining)
@@ -198,11 +199,13 @@ Source of Data
     plot(modFitB1)
 
 ![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-11-1.png)
+
 ###Plot of Confusion matrix using random forest
 
     plot(cmf$table, col = cmf$byClass, main = paste("Random Forest Confusion Matrix: Accuracy =", round(cmf$overall['Accuracy'], 4)))
 
 ![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-12-1.png)
+
 \#\#\#The results show that the random forest prediction method is more
 accurate than the the decision tree method and so the predicition
 analysis for the test samples will be assessed using the Random forest
