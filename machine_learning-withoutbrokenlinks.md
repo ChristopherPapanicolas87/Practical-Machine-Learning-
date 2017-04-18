@@ -110,7 +110,7 @@ Source of Data
     fancyRpartPlot(modA)
 
 ![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-7-1.png)
-\#\#\#Confusion matrix of Random Forest analysis
+###Confusion matrix of Random Forest analysis
 
     A1 <- predict(modA, myTesting, type = "class")
     tree <- confusionMatrix(A1, myTesting$classe)
@@ -152,7 +152,7 @@ Source of Data
 
     plot(tree$table, col = tree$byClass, main = paste("Analysis by Decision Tree: Accuracy =", round(tree$overall['Accuracy'], 4)))
 
-![](machine_learning-md_files/figure-markdown_strict/unnamed-chunk-9-1.png)
+![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-9-1.png)
 \#\#\#Prediction of Data using Random Forest
 
     set.seed(12345)
@@ -197,12 +197,12 @@ Source of Data
 
     plot(modFitB1)
 
-![](machine_learning-md_files/figure-markdown_strict/unnamed-chunk-11-1.png)
-\#\#\#Plot of Confusion matrix using random forest
+![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-11-1.png)
+###Plot of Confusion matrix using random forest
 
     plot(cmf$table, col = cmf$byClass, main = paste("Random Forest Confusion Matrix: Accuracy =", round(cmf$overall['Accuracy'], 4)))
 
-![](machine_learning-md_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-12-1.png)
 \#\#\#The results show that the random forest prediction method is more
 accurate than the the decision tree method and so the predicition
 analysis for the test samples will be assessed using the Random forest
@@ -262,7 +262,7 @@ method.
 
     plot(gbmFit1, ylim=c(0.9, 1))
 
-![](machine_learning-md_files/figure-markdown_strict/unnamed-chunk-14-1.png)
+![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-14-1.png)
 
 ### Since Accuracy of test samples is the highest with the Random Forest method, this will be used to predict the classe output of the test sample.
 
