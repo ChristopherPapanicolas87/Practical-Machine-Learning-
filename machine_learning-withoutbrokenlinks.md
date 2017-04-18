@@ -110,6 +110,7 @@ Source of Data
     fancyRpartPlot(modA)
 
 ![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-7-1.png)
+ 
 ###Confusion matrix of Random Forest analysis
 
     A1 <- predict(modA, myTesting, type = "class")
@@ -154,7 +155,7 @@ Source of Data
 
 ![](https://github.com/ChristopherPapanicolas87/Practical-Machine-Learning-/blob/master/unnamed-chunk-9-1.png)
 
-####Prediction of Data using Random Forest
+###Prediction of Data using Random Forest
 
     set.seed(12345)
     modFitB1 <- randomForest(classe ~ ., data=myTraining)
@@ -276,7 +277,7 @@ method.
     ##  B  A  B  A  A  E  D  B  A  A  B  C  B  A  E  E  A  B  B  B 
     ## Levels: A B C D E
 
-#### For loop is generated to print the classe output intop txt files.
+### For loop is generated to print the classe output intop txt files.
 
     pml_write_files = function(x){
         n = length(x)
